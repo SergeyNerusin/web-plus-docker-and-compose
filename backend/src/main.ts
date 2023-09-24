@@ -10,7 +10,7 @@ async function bootstrap() {
   const PORT = configService.get<number>('server.port');
 
   const corsOptions: CorsOptions = {
-    origin: `http://localhost:3000`,
+    origin: `https://sergn.nomoredomainsicu.ru`,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: [
       'Content-Type',
