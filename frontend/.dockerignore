@@ -1,0 +1,12 @@
+# Node 
+node_modules/
+
+# Dist
+build/
+dist/
+
+# Docker
+Dockerfile
+
+# Git
+.gitignore
