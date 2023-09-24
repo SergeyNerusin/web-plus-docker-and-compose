@@ -5,7 +5,7 @@ RUN npm ci --no-audit --no-fund
 COPY . ./
 RUN npm run build
 
-FROM node:16.17-alpine AS backend
+FROM node:16-alpine AS backend
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --omit=dev --no-audit --no-fund \
