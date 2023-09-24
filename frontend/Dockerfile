@@ -1,7 +1,7 @@
-FROM node:16.17-alpine AS builder
+FROM node:16-alpine AS builder
 WORKDIR /app   
 COPY package*.json ./
-RUN npm ci --no-audit --no-fund
+RUN npm ci 
 COPY . ./
 RUN npm run build \
     && rm -rf ./src \
